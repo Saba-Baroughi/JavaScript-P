@@ -1,0 +1,28 @@
+button {
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-weight: 800;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 24px;
+  margin: 2px;
+}
+
+#add-square {
+  background-color: green;
+}
+
+#rmv-square {
+  background-color: red;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: blue;
+  margin: 2px;
+  display: inline-block;
+}
