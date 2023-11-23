@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="./styles/keyboardEvents.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body
+    onkeypress="handleKeys(event);"
+    onkeydown="handleKeys(event);"
+    onkeyup="handleKeys(event);"
+  >
+    <div id="key-pressed">
+      <p>Pressed</p>
+    </div>
+    <div id="key-down">
+      <p>Down</p>
+    </div>
+    <div id="key-up">
+      <p>Up</p>
+    </div>
+    <h2>Click in the body, then start typing:</h2>
+    <h3>Current key pressed: <span id="current-key"></span></h3>
+    <h3>Last key pressed: <span id="last-key"></span></h3>
+    <p>
+      <em
+        >Note: In the body element we are passing the event to the handleKeys()
+        function. This allows you to use the properties and methods described in
+        the text, such as <code>event.key</code>, <code>event.repeat</code>,
+        etc.</em
+      >
+    </p>
+    <script src="./keyboardEvents.js"></script>
+  </body>
+</html>
