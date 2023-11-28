@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Validating Form Data</title>
+    <style>
+      label {
+        display: block;
+      }
+      input {
+        margin-bottom: 1rem;
+      }
+      p {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Register your account:</h3>
+    <p id="errors"></p>
+    <form
+      id="registration-form"
+      method="POST"
+      action="https://formdump.codeinstitute.net/"
+    >
+      <div class="username">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text" required />
+      </div>
+      <div class="password">
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password" required />
+      </div>
+      <input type="submit" />
+    </form>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
