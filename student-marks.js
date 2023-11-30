@@ -23,7 +23,14 @@ const averagePoints = (arr, subject) => {
   let numberOfStudents = 0;
 
   for (const student of arr) {
-    //for(let i=0; arr.length>i;i++)
+    //for (let i = 0; i < arr.length; i++) {
+    //     const student = arr[i];
+
+    //     if (subject in student.results) {
+    //       totalMarks += student.results[subject];
+    //       numberOfStudents++;
+    //     }
+    //   }
     //// Check if the student has results for the specified subject
     // if (student.results.hasOwnProperty(subject)) {
     //     // Do something if the subject exists in the results
