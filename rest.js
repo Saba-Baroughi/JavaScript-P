@@ -7,6 +7,9 @@ console.log(moreMixedLetters);
 
 const updateSortReverse = (arr, ...letters) =>
   [...arr, ...letters].sort().reverse();
+// In summary, ...arr is used to include the elements from an existing array,
+// and ...letters is used to include additional elements from the function
+//parameters,and together they form a new array.
 
 let reverseSort = updateSortReverse(moreMixedLetters, "n", "m", "o");
 
