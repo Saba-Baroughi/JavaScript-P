@@ -27,3 +27,37 @@ let students = [
 const topMaths = students.filter((student) => student.results.maths >= 90);
 
 console.log("Variable named: topMaths -", topMaths);
+////// reduce
+
+const biggest = students.reduce(
+  (acc, cur) => {
+    acc =
+      acc.max > cur.results.english
+        ? acc
+        : { name: cur.name, max: cur.results.english };
+    return acc;
+  },
+  { name: "", max: 0 }
+);
+console.log(biggest);
+
+// with if more simple
+// const biggest = students.reduce((acc, cur) => {
+//     if (acc.max > cur.results.english) {
+//         return acc;
+//     } else {
+//         return { name: cur.name, max: cur.results.english };
+//     }
+// }, { name: '', max: 0 });
+
+// console.log("Variable named: biggest -", biggest);
+/* Using destructuring 
+const biggest = students.reduce(({max, name}, {name:n, results:{english}}) => {
+    if(max < english) {
+        acc = {name:n, max: english};
+    }
+    return acc;
+    }, {name: '', max: 0});
+    
+console.log(biggest);
+*/
