@@ -24,21 +24,31 @@ let students = [
     results: { science: 93, english: 87, art: 95 },
   },
 ];
-const makeList = (arr, student) => {
-  const foundStudent = arr.find((studentObj) => studentObj.name === student);
+// const makeList = (arr, student) => {
+//   const foundStudent = arr.find((studentObj) => studentObj.name === student);
 
-  if (foundStudent) {
-    const { subjects } = foundStudent;
-    return subjects;
-  } else {
-    return [];
+//   if (foundStudent) {
+//     const { subjects } = foundStudent;
+//     return subjects;
+//   } else {
+//     return [];
+//   }
+// };
+
+// // Destructuring on the return value from calling the function
+// let [first, second, ...rest] = makeList(students, "John");
+
+// // Logging the values
+// console.log("First Subject:", first);
+// console.log("Second Subject:", second);
+// console.log("Rest of Subjects:", rest);
+const makeList = (arr, student) => {
+  for (let itm of arr) {
+    if (itm.name == student) {
+      return itm.subjects;
+    }
   }
 };
 
-// Destructuring on the return value from calling the function
 let [first, second, ...rest] = makeList(students, "John");
-
-// Logging the values
-console.log("First Subject:", first);
-console.log("Second Subject:", second);
-console.log("Rest of Subjects:", rest);
+console.log(first, second, rest);
