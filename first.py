@@ -44,3 +44,40 @@ print(bool(b))  # Falsy
 print(bool(c))  # Truthy
 print(bool(d))  # Falsy
 print(bool(e))  # Truthy
+
+#Another Example
+a=1
+b=1.0
+print(a==b)
+print(a is b)
+print(id(a))# they have different ids
+print(id(b))
+# a and b have the same numeric value but a different type
+c=b
+print(b==c)
+print(b is c)
+print(id(b))
+print(id(c))
+# b and c are equal in value and identity
+
+
+#Another Example
+list_a = [10, 20, 30,]
+list_b = [10, 20, 30,]
+list_c = list_a
+
+
+# Check if list_a is the same list as list_b
+print( list_a is list_b)
+
+# Check if list_a is equal to list_b
+print( list_a == list_b)
+
+# Check if list_a is the same list as list_c
+print( list_a is list_c)
+
+#Example
+print('Program' in 'Programming')# True
+print('spam' in ['spam', 'egg'])#True
+print('sausage' not in ['spam', 'egg'])#True
+print("robbie" in ["gary", "howard", "mark", "jason"]) #False
