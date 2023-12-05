@@ -28,3 +28,19 @@ print(my_string_2.split(" "))
 
 spaced_string = "     42       "
 print(spaced_string.strip())
+
+
+#another Example
+# Assign values to variables
+a = []        # List (Falsy)
+b = ""        # Empty string (Falsy)
+c = "Hello"   # Non-empty string (Truthy)
+d = 0.0       # Float with value 0.0 (Falsy)
+e = 42        # Integer with a non-zero value (Truthy)
+
+# Print truthy/falsy values
+print(bool(a))  # Falsy
+print(bool(b))  # Falsy
+print(bool(c))  # Truthy
+print(bool(d))  # Falsy
+print(bool(e))  # Truthy
